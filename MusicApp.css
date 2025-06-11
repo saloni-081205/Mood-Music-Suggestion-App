@@ -1,0 +1,93 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:Roboto,Arial;
+}
+
+body {
+  text-align: center;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s ease;
+  padding: 20px;
+}
+
+.container{
+  height: 100vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #3e024b;
+  color: rgb(61, 2, 78);
+  font-style: italic;
+}
+
+
+.mood-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.mood-buttons button {
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #6f0387;
+  color: white;
+  transition: transform 0.2s;
+  box-shadow: 3px 5px 10px rgba(121, 4, 134, 0.5);
+}
+
+.mood-buttons button:hover {
+  transform: scale(1.05);
+}
+
+#suggestions{
+  background-color: rgb(249, 175, 233);
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 3px 5px 10px rgba(173, 5, 114, 0.5);
+}
+#suggestions h2 {
+  margin-bottom: 10px;
+  color: #3e024b;
+  margin-bottom: 40px;
+}
+
+#suggestions ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+#suggestions li {
+  margin: 8px 0;
+  margin-top: 15px;
+}
+
+#suggestions li a{
+  color:rgb(99, 0, 91);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .mood-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
